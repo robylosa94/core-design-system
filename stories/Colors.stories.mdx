@@ -1,0 +1,202 @@
+import { Meta, ColorPalette, ColorItem } from "@storybook/addon-docs/blocks";
+import { getCssPropHex } from "../utils/getColors";
+
+<Meta title="Style/Colors" />
+
+# Primary
+
+Brand or Main Product color for the entire design system.
+
+<br />
+
+<ColorPalette>
+  <ColorItem
+    title="lighter"
+    subtitle="Malibu"
+    colors={[getCssPropHex("--color-primary-lighter")]}
+  />
+  <ColorItem
+    title="base"
+    subtitle="Dodger Blue"
+    colors={[getCssPropHex("--color-primary")]}
+  />
+  <ColorItem
+    title="darker"
+    subtitle="Mariner"
+    colors={[getCssPropHex("--color-primary-darker")]}
+  />
+</ColorPalette>
+
+# System Colors Light
+
+Color collections for the entire product ecosystem.
+
+<br />
+
+<ColorPalette>
+  <ColorItem
+    title="monochrome"
+    colors={[
+      getCssPropHex("--color-mono-darkest"),
+      getCssPropHex("--color-mono-darker"),
+      getCssPropHex("--color-mono-dark"),
+      getCssPropHex("--color-mono-medium-dark"),
+      getCssPropHex("--color-mono-medium"),
+      getCssPropHex("--color-mono-medium-light"),
+      getCssPropHex("--color-mono-light"),
+      getCssPropHex("--color-mono-lighter"),
+      getCssPropHex("--color-mono-lightest"),
+      "#FFFFFF",
+    ]}
+  />
+  <ColorItem
+    title="red"
+    colors={[
+      getCssPropHex("--color-red-darker"),
+      getCssPropHex("--color-red-dark"),
+      getCssPropHex("--color-red"),
+      getCssPropHex("--color-red-light"),
+      getCssPropHex("--color-red-lighter"),
+    ]}
+  />
+  <ColorItem
+    title="green"
+    colors={[
+      getCssPropHex("--color-green-darker"),
+      getCssPropHex("--color-green-dark"),
+      getCssPropHex("--color-green"),
+      getCssPropHex("--color-green-light"),
+      getCssPropHex("--color-green-lighter"),
+    ]}
+  />
+  <ColorItem
+    title="blue"
+    colors={[
+      getCssPropHex("--color-blue-darker"),
+      getCssPropHex("--color-blue-dark"),
+      getCssPropHex("--color-blue"),
+      getCssPropHex("--color-blue-light"),
+      getCssPropHex("--color-blue-lighter"),
+    ]}
+  />
+  <ColorItem
+    title="yellow"
+    colors={[
+      getCssPropHex("--color-yellow-darker"),
+      getCssPropHex("--color-yellow-dark"),
+      getCssPropHex("--color-yellow"),
+      getCssPropHex("--color-yellow-light"),
+      getCssPropHex("--color-yellow-lighter"),
+    ]}
+  />
+  <ColorItem
+    title="orange"
+    colors={[
+      getCssPropHex("--color-orange-darker"),
+      getCssPropHex("--color-orange-dark"),
+      getCssPropHex("--color-orange"),
+      getCssPropHex("--color-orange-light"),
+      getCssPropHex("--color-orange-lighter"),
+    ]}
+  />
+  <ColorItem
+    title="teal"
+    colors={[
+      getCssPropHex("--color-teal-darker"),
+      getCssPropHex("--color-teal-dark"),
+      getCssPropHex("--color-teal"),
+      getCssPropHex("--color-teal-light"),
+      getCssPropHex("--color-teal-lighter"),
+    ]}
+  />
+  <ColorItem
+    title="purple"
+    colors={[
+      getCssPropHex("--color-purple-darker"),
+      getCssPropHex("--color-purple-dark"),
+      getCssPropHex("--color-purple"),
+      getCssPropHex("--color-purple-light"),
+      getCssPropHex("--color-purple-lighter"),
+    ]}
+  />
+</ColorPalette>
+
+# System Colors Dark
+
+Color collections for the entire product ecosystem.
+
+<br />
+
+<ColorPalette>
+  <ColorItem
+    title="monochrome"
+    colors={[
+      getCssPropHex("--color-mono-darkest"),
+      getCssPropHex("--color-mono-darker"),
+      getCssPropHex("--color-mono-dark"),
+      getCssPropHex("--color-mono-medium-dark"),
+      getCssPropHex("--color-mono-medium"),
+      getCssPropHex("--color-mono-medium-light"),
+      getCssPropHex("--color-mono-light"),
+      getCssPropHex("--color-mono-lighter"),
+      getCssPropHex("--color-mono-lightest"),
+      "#FFFFFF",
+    ]}
+  />
+  <ColorItem
+    title="red"
+    colors={[
+      getCssPropHex("--color-red-darker"),
+      getCssPropHex("--color-red-dark"),
+      getCssPropHex("--color-red"),
+    ]}
+  />
+  <ColorItem
+    title="green"
+    colors={[
+      getCssPropHex("--color-green-darker"),
+      getCssPropHex("--color-green-dark"),
+      getCssPropHex("--color-green"),
+    ]}
+  />
+  <ColorItem
+    title="blue"
+    colors={[
+      getCssPropHex("--color-blue-darker"),
+      getCssPropHex("--color-blue-dark"),
+      getCssPropHex("--color-blue"),
+    ]}
+  />
+  <ColorItem
+    title="yellow"
+    colors={[
+      getCssPropHex("--color-yellow-darker"),
+      getCssPropHex("--color-yellow-dark"),
+      getCssPropHex("--color-yellow"),
+    ]}
+  />
+  <ColorItem
+    title="orange"
+    colors={[
+      getCssPropHex("--color-orange-darker"),
+      getCssPropHex("--color-orange-dark"),
+      getCssPropHex("--color-orange"),
+    ]}
+  />
+  <ColorItem
+    title="teal"
+    colors={[
+      getCssPropHex("--color-teal-darker"),
+      getCssPropHex("--color-teal-dark"),
+      getCssPropHex("--color-teal"),
+    ]}
+  />
+  <ColorItem
+    title="purple"
+    colors={[
+      getCssPropHex("--color-purple-darker"),
+      getCssPropHex("--color-purple-dark"),
+      getCssPropHex("--color-purple"),
+    ]}
+  />
+</ColorPalette>
