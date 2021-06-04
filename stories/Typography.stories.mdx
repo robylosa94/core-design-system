@@ -1,0 +1,50 @@
+import { Meta, Typeset, Story } from "@storybook/addon-docs/blocks";
+
+import Title from "../components/ui/Title/Title.js";
+import Text from "../components/ui/Text/Text.js";
+
+<Meta title="Style/Typography" components={[Title, Text]} />
+
+# Typography
+
+**Font:** Inter
+
+**Weights:** 400(regular), 700(bold)
+
+<br />
+
+## **Headings**
+
+**Weight:** 700(bold)
+
+<Title Component="h3" size="xl">
+  Headline text xlarge
+</Title>
+<Title Component="h3" size="lg">
+  Headline text large
+</Title>
+<Title Component="h3" size="md">
+  Headline text medium
+</Title>
+<Title Component="h3" size="base">
+  Headline text base
+</Title>
+<Title Component="h3" size="sm">
+  Headline text small
+</Title>
+<Title Component="h3" size="xs">
+  Headline test xsmall
+</Title>
+
+## **Lead**
+
+**Weight:** 400(regular)
+
+<Text size="sm">Lead text</Text>
+
+## **Body**
+
+**Weight:** 400(regular)
+
+<Text size="base">Body text</Text>
+<Text size="sm">Body text small</Text>

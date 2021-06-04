@@ -1,0 +1,27 @@
+.root {
+  @apply font-bold text-mono-darkest;
+}
+
+.xl {
+  @apply text-[2.5rem];
+}
+
+.lg {
+  @apply text-[2rem];
+}
+
+.md {
+  @apply text-[1.75rem];
+}
+
+.base {
+  @apply text-2xl;
+}
+
+.sm {
+  @apply text-xl;
+}
+
+.xs {
+  @apply text-base;
+}
