@@ -1,5 +1,5 @@
 .root {
-  @apply font-bold text-mono-darkest;
+  @apply font-bold text-mono-darkest tracking-tight leading-tight;
 }
 
 .xl {
@@ -23,5 +23,5 @@
 }
 
 .xs {
-  @apply text-base;
+  @apply text-base tracking-[-0.01rem];
 }

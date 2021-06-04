@@ -19,6 +19,7 @@
       "isolatedModules": true,
       "jsx": "preserve",
       "paths": {
+        "@assets/*": ["assets/*"],
         "@config/*": ["config/*"],
         "@components/*": ["components/*"],
         "@styles/*": ["styles/*"],
