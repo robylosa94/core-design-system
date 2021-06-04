@@ -1,17 +1,17 @@
-export const getCssPropHex = (prop) => {
+export const getCssPropHex = (prop: string) => {
   return getComputedStyle(document.documentElement)
     .getPropertyValue(prop)
     .toUpperCase();
 };
 
-export const getCssPropRgb = (prop) => {
+export const getCssPropRgb = (prop: string) => {
   const hex = getCssPropHex(prop);
 
   if (hex.length != 8) {
     throw "Only six-digit hex colors are allowed.";
   }
 
-  var aRgbHex = hex.match(/.{1,2}/g);
+  var aRgbHex: any = hex.match(/.{1,2}/g);
   var aRgb = [
     parseInt(aRgbHex[1], 16),
     " ",
@@ -22,12 +22,12 @@ export const getCssPropRgb = (prop) => {
   return aRgb;
 };
 
-export const getCssPropHsl = (prop) => {
-  const rgb = getCssPropRgb(prop);
+export const getCssPropHsl = (prop: string) => {
+  const rgb: any = getCssPropRgb(prop);
 
-  let r = rgb[0];
-  let g = rgb[2];
-  let b = rgb[4];
+  let r: any = rgb[0];
+  let g: any = rgb[2];
+  let b: any = rgb[4];
 
   // Make r, g, and b fractions of 1
   r /= 255;

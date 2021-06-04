@@ -1,7 +1,13 @@
+import { FC } from "react";
 import cn from "classnames";
 import s from "./Text.module.css";
 
-const Text = ({ size = "base", children, className }) => {
+interface Props {
+  size?: "lg" | "xl" | "2xl";
+  className?: string;
+}
+
+const Text: FC<Props> = ({ size = "base", className, children }) => {
   const rootClassName = cn(
     s.root,
     {

@@ -1,7 +1,20 @@
+import { FC, JSXElementConstructor } from "react";
+
 import cn from "classnames";
 import s from "./Title.module.css";
 
-const Title = ({ size = "base", Component = "h2", children, className }) => {
+interface Props {
+  size?: "lg" | "xl" | "2xl";
+  Component?: string | JSXElementConstructor<any>;
+  className?: string;
+}
+
+const Title: FC<Props> = ({
+  size = "base",
+  Component = "h2",
+  className,
+  children,
+}) => {
   const rootClassName = cn(
     s.root,
     {

@@ -1,5 +1,5 @@
-import Head from 'next/head'
-import Button from '../components/Button/button'
+import Button from "@components/ui/Button";
+import Head from "next/head";
 
 export default function Index() {
   return (
@@ -13,5 +13,5 @@ export default function Index() {
         <Button link="https://google.com" label="Click me" />
       </div>
     </div>
-  )
+  );
 }
